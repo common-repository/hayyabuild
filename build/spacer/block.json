@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/spacer",
+  "title": "Spacer",
+  "description": "This will help you to create a flexible spacer.",
+
+  "keywords": [ "spacer" ],
+
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": "center"
+    },
+    "ratio": {
+      "type": "string",
+      "default": ""
+    },
+    "height": {
+      "type": "number",
+      "default": "50"
+    },
+    "container": {
+      "type": "boolean",
+      "default": false
+    },
+    "borderSize": {
+      "type": "number",
+      "default": "0"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#DDDDDD"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "borderSize": "1"
+    }
+  }
+}

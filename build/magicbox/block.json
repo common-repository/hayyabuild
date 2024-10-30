@@ -1,0 +1,99 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/magicbox",
+  "title": "Magic Box (Dynamic Content)",
+  "description": "With magic box block you can show or hide inner content based on different conditions. For example some times you need to show some information for only logged-in users or you need to put some content in footer only for the front page.",
+
+  "support": {
+    "html": false
+  },
+
+  "attributes": {
+    "show_on_all": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_user_logged_in": {
+      "type": "string",
+      "default": ""
+    },
+    "is_front_page": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_home": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_single": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_author": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_pages": {
+      "type": "string",
+      "default": ""
+    },
+    "hide_pages": {
+      "type": "string",
+      "default": ""
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "is_updated": {
+      "type": "boolean",
+      "default": false
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "style"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "style": {
+        "border": "1px solid #D0D0D0",
+        "borderRadius": "5px",
+        "padding": "5px 20px"
+      }
+    },
+    "innerBlocks": [
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "customFontSize": 25,
+          "content": "You can use this box to display content under a specific conditions.",
+          "align": "center"
+        }
+      },
+      {
+        "name": "hayyabuild/button",
+        "attributes": {
+          "text": "Button",
+          "icon": "fa fa-home",
+          "size": 2,
+          "style": {
+            "background": "#6BAFFF"
+          }
+        }
+      }
+    ]
+  }
+
+}

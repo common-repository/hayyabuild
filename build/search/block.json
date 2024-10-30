@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/search",
+  "title": "Search Box",
+  "description": "A search input which enables the visitors to find words, sentences, and numbers in a pages and posts.",
+
+  "supports": {
+    "html": false
+  },
+
+  "attributes": {
+    "theme": {
+      "type": "string",
+      "default": ""
+    },
+    "expand": {
+      "type": "boolean",
+      "default": false
+    },
+    "right": {
+      "type": "boolean",
+      "default": false
+    },
+    "editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "theme": "hb_transparent"
+    }
+  }
+}

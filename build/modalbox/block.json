@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/modalbox",
+  "title": "Popup Box",
+  "description": "The Modal Box block is a dialog box/popup window that is displayed on top of the current page. Use a modal for dialog boxes, confirmation messages, or other content that can be called up.",
+
+  "support": {
+    "html": false
+  },
+
+  "attributes": {
+    "close": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": ".hayyabuild-modalbox__body__close",
+      "attribute": "class",
+      "default": true
+    },
+    "delay": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-hayyabuild-modalbox",
+      "attribute": "data-delay",
+      "default": "5"
+    },
+    "remember": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-hayyabuild-modalbox",
+      "attribute": "data-remember",
+      "default": "1"
+    },
+    "size": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-hayyabuild-modalbox",
+      "attribute": "data-size",
+      "default": "medium"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "empty",
+      "attribute": "style"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "style": {
+        "border": "1px solid #D0D0D0",
+        "borderRadius": "5px",
+        "padding": "5px 20px"
+      }
+    },
+    "innerBlocks": [
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "customFontSize": 25,
+          "content": "The Modal Box block is a dialog box/popup window that is displayed on top of the current page. Use a modal for dialog boxes, confirmation messages, or other content that can be called up.",
+          "align": "center"
+        }
+      },
+      {
+        "name": "hayyabuild/button",
+        "attributes": {
+          "text": "Close",
+          "icon": "fa fa-home",
+          "size": 2,
+          "style": {
+            "background": "#6BAFFF"
+          }
+        }
+      }
+    ]
+  }
+
+}

@@ -1,0 +1,92 @@
+{
+    "name": "hayyabuild/image",
+    "category": "hayyabuild",
+    "attributes": {
+      "align": {
+        "type": "string"
+      },
+      "src": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "img",
+        "attribute": "src",
+        "default": ""
+      },
+      "url": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "a",
+        "attribute": "href",
+        "default": ""
+      },
+      "caption": {
+        "type": "array",
+        "source": "children",
+        "selector": "figcaption"
+      },
+      "alt": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "img",
+        "attribute": "alt",
+        "default": ""
+      },
+      "title": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "img",
+        "attribute": "title",
+        "default": ""
+      },
+
+
+      "href": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "figure > a",
+        "attribute": "href"
+      },
+      "rel": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "figure > a",
+        "attribute": "rel"
+      },
+      "linkTarget": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "figure > a",
+        "attribute": "target"
+      },
+      "linkClass": {
+        "type": "string",
+        "source": "attribute",
+        "selector": "figure > a",
+        "attribute": "class"
+      },
+
+
+      "width": {
+        "type": "number"
+      },
+      "height": {
+        "type": "number"
+      },
+      "sizeSlug": {
+        "type": "string"
+      },
+      "id": {
+        "type": "string"
+      },
+      "classesList": {
+        "type": "string",
+        "default": ""
+      },
+      "style": {
+        "type": "object",
+        "source": "attribute",
+        "selector": "xx",
+        "attribute": "xx"
+      }
+    }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/separator",
+  "title": "Separator",
+  "description": "You can use this block to separate the content vertically.",
+
+  "supports": {
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "content": {
+      "type": "array",
+      "source": "children",
+      "selector": "h1,h2,h3,h4,h5,h6"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    },
+    "level": {
+      "type": "number",
+      "default": 4
+    },
+    "separatorStyle": {
+      "type": "string"
+    },
+    "dubleLines": {
+      "type": "boolean",
+      "default": false
+    },
+    "apllyMask": {
+      "type": "boolean",
+      "default": false
+    },
+    "borderColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "content": "Separator Block",
+      "icon": "fa fa-angle-down",
+      "dubleLines": true,
+      "borderColor": "#3888DB",
+      "textColor": "#3888DB",
+      "separatorStyle": "default"
+    }
+  }
+}

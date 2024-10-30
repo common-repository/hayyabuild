@@ -1,0 +1,124 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/social",
+  "title": "Social Media Menu",
+  "description": "Easily create beautiful social media menu.",
+  "keywords": [ "social media" ],
+
+  "supports": {
+    "html": false
+  },
+
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "size": {
+      "type": "number",
+      "default": 5
+    },
+    "shadow": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "facebook": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.facebook",
+      "attribute": "href"
+    },
+    "twitter": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.twitter",
+      "attribute": "href"
+    },
+    "linkedin": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.linkedin",
+      "attribute": "href"
+    },
+    "youtube": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.youtube",
+      "attribute": "href"
+    },
+    "vimeo": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.vimeo",
+      "attribute": "href"
+    },
+    "instagram": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.instagram",
+      "attribute": "href"
+    },
+    "pinterest": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.pinterest",
+      "attribute": "href"
+    },
+    "flickr": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.flickr",
+      "attribute": "href"
+    },
+    "github": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.github",
+      "attribute": "href"
+    },
+    "vk": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.vk",
+      "attribute": "href"
+    },
+    "tumblr": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.tumblr",
+      "attribute": "href"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "",
+      "attribute": ""
+    }
+  },
+  "example": {
+    "attributes": {
+      "shadow": true,
+      "size": "15",
+      "style": {
+        "padding": "0 10px",
+        "background": "rgba(0,130,190,0.6)",
+        "border": "1px solid rgba(0,130,190,0.7)",
+        "borderRadius": "3px",
+        "margin": "5px"
+      }
+    }
+  }
+}

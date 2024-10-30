@@ -1,0 +1,104 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/featureslist",
+  "title": "Features List",
+  "description": "Features List block are an advanced list to clarify the features of your products/services.",
+
+  "keywords": [
+    "info",
+    "list"
+  ],
+
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "showline": {
+      "type": "boolean",
+      "default": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "hayyabuild/featureslistitem",
+        "attributes": {
+          "customFontSize": 25
+        },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": {
+              "customFontSize": 25,
+              "content": "Features Line 1."
+            }
+          }
+        ]
+      },
+      {
+        "name": "hayyabuild/featureslistitem",
+        "attributes": {
+          "customFontSize": 25
+        },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": {
+              "customFontSize": 25,
+              "content": "Features Line 2."
+            }
+          }
+        ]
+      },
+      {
+        "name": "hayyabuild/featureslistitem",
+        "attributes": {
+          "customFontSize": 25
+        },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": {
+              "customFontSize": 25,
+              "content": "Features Line 3."
+            }
+          }
+        ]
+      },
+      {
+        "name": "hayyabuild/featureslistitem",
+        "attributes": {
+          "customFontSize": 25
+        },
+        "innerBlocks": [
+          {
+            "name": "hayyabuild/button",
+            "attributes": {
+              "text": "You can add any block",
+              "icon": "fa fa-home",
+              "size": 3,
+              "align": "left",
+              "style": {
+                "background": "#6BAFFF"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

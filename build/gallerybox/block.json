@@ -1,0 +1,114 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/gallerybox",
+  "title": "Gallery Box",
+  "description": "Gallery Box block is a block for displaying images in a Mac-style `lightbox` that floats overtop of web page.",
+
+  "keywords": [
+    "immage",
+    "gallary"
+  ],
+
+  "supports": {
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": [],
+      "source": "query",
+      "selector": "figure.hayyabuild-gallerybox__container__image",
+      "query": {
+        "url": {
+          "source": "attribute",
+          "selector": "img",
+          "attribute": "src"
+        },
+        "alt": {
+          "source": "attribute",
+          "selector": "img",
+          "attribute": "alt",
+          "default": ""
+        },
+        "caption": {
+          "type": "string",
+          "source": "html",
+          "selector": "figcaption"
+        },
+        "id": {
+          "source": "attribute",
+          "selector": "img",
+          "attribute": "data-id"
+        }
+      }
+    },
+    "size": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-size",
+      "selector": ".hayyabuild-gallerybox",
+      "default": "3"
+    },
+    "showcaption": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-gallerybox--showcaption",
+      "default": true
+    },
+    "effect": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-effect",
+      "selector": ".hayyabuild-gallerybox",
+      "default": "fade"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-gallerybox--autoplay",
+      "default": true
+    },
+    "fitimages": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-gallerybox--fitimages",
+      "default": true
+    },
+    "zoomimage": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-gallerybox--zoomimage",
+      "default": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "images": [
+        { "url": "https://s.w.org/images/core/5.3/Glacial_lakes%2C_Bhutan.jpg" },
+        { "url": "https://s.w.org/images/core/5.3/Sediment_off_the_Yucatan_Peninsula.jpg" },
+        { "url": "https://s.w.org/images/core/5.3/Sediment_off_the_Yucatan_Peninsula.jpg" },
+        { "url": "https://s.w.org/images/core/5.3/Glacial_lakes%2C_Bhutan.jpg" },
+        { "url": "https://s.w.org/images/core/5.3/Glacial_lakes%2C_Bhutan.jpg" },
+        { "url": "https://s.w.org/images/core/5.3/Sediment_off_the_Yucatan_Peninsula.jpg" }
+      ]
+    }
+  }
+}

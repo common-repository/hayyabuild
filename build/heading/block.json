@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/heading",
+  "title": "Advanced Heading",
+  "description": "You can use this block to separate the content vertically.",
+
+  "keywords": [
+    "heading"
+  ],
+
+  "attributes": {
+    "content": {
+      "type": "array",
+      "source": "children",
+      "selector": "h1,h2,h3,h4,h5,h6"
+    },
+    "align": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "default": 3
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "content": "Advanced Heading"
+    }
+  }
+}

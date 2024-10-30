@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/pricingtable",
+  "title": "Pricing Table",
+  "description": "Pricing table block for entrepreneurs and service providers. With this block you can create a modern and responsive pricing table for your business pricing plans in just a few seconds.",
+
+  "support": {
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "cleanStyle": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-pricingtable--clean-style",
+      "default": true
+    },
+    "zoomEffect": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-pricingtable--zoom-effect",
+      "default": false
+    },
+    "opacityEffect": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-pricingtable--opacity-effect",
+      "default": false
+    },
+    "gradientEffect": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-pricingtable--gradient-effect",
+      "default": false
+    },
+    "shadowEffect": {
+      "type": "boolean",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-pricingtable--shadow-effect",
+      "default": false
+    },
+    "numOfplans": {
+      "type": "number",
+      "default": 3
+    },
+    "id": {
+      "type": "string",
+      "default": ""
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

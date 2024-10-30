@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/alert",
+  "title": "Alert Box",
+  "description": "Alerts. Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+
+  "keywords": [ "alert", "content" ],
+
+  "attributes": {
+    "text": {
+      "type": "text",
+      "source": "children",
+      "selector": ".wp-block-hayyabuild-alert__body"
+    },
+    "dismissible": {
+      "type": "boolean",
+      "default": false
+    },
+    "rememberDismissible": {
+      "type": "boolean",
+      "default": false
+    },
+    "icon": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "radius": {
+      "type": "number",
+      "default": "3"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "text": "Alerts. Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+      "icon": "fa fa-info-circle",
+      "dismissible": true,
+      "type": "warning"
+    }
+  }
+}

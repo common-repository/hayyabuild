@@ -1,0 +1,90 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/row",
+  "title": "Row/Columns",
+  "description": "CSS Grid Layout aka `Grid`, It is a 2-dimensional grid system, meaning it can handle both columns and rows.",
+
+  "keywords": [ "row", "column", "grid", "layout" ],
+
+  "supports": {
+    "align": [ "wide", "full" ],
+    "html": false,
+    "anchor": true
+  },
+
+  "attributes": {
+    "row": {
+      "type": "string",
+      "default": "1-3_1-3_1-3"
+    },
+    "device": {
+      "type": "string"
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": ""
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "row": "1-3_2-3"
+    },
+    "innerBlocks": [
+      {
+        "name": "hayyabuild/column",
+        "attributes": {
+          "style": {
+            "borderRadius": "3px",
+            "padding": "20px 0",
+            "background": "#D4ECFF",
+            "border": "2px solid transparent"
+          }
+        },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": {
+              "customFontSize": 25,
+              "content": "Column 1",
+              "align": "center"
+            }
+          }
+        ]
+      },
+      {
+        "name": "hayyabuild/column",
+        "attributes": {
+          "style": {
+            "borderRadius": "3px",
+            "padding": "20px 0",
+            "background": "#FFD1E5",
+            "border": "2px solid transparent"
+          }
+        },
+        "innerBlocks": [
+          {
+            "name": "core/paragraph",
+            "attributes": {
+              "customFontSize": 25,
+              "content": "Column 2",
+              "align": "center"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

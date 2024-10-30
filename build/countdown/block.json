@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/countdown",
+  "title": "Countdown",
+  "description": "You can use this block to create a countdown timer.",
+
+  "keywords": [ "countdown", "timer" ],
+
+  "attributes": {
+    "time": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-time",
+      "selector": ".hayyabuild-countdown"
+    },
+    "showWeeks": {
+      "type": "boolean",
+      "default": false
+    },
+    "action": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-action",
+      "selector": ".hayyabuild-countdown"
+    },
+    "url": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-url",
+      "selector": ".hayyabuild-countdown"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+
+    "weeksTitle": {
+      "type": "array",
+      "source": "children",
+      "selector": ".weeks .title",
+      "default": "Weeks"
+    },
+    "daysTitle": {
+      "type": "array",
+      "source": "children",
+      "selector": ".days .title",
+      "default": "Days"
+    },
+    "hoursTitle": {
+      "type": "array",
+      "source": "children",
+      "selector": ".hours .title",
+      "default": "Hours"
+    },
+    "minutesTitle": {
+      "type": "array",
+      "source": "children",
+      "selector": ".minutes .title",
+      "default": "Minutes"
+    },
+    "secondsTitle": {
+      "type": "array",
+      "source": "children",
+      "selector": ".seconds .title",
+      "default": "Seconds"
+    },
+
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string"
+    }
+  },
+
+  "support": {
+    "html": false
+  }
+}

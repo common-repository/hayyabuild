@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/testimonial",
+  "title": "Testimonial",
+  "description": "A testimonial is often used to let people know what other people think of you or your product.",
+
+
+  "attributes": {
+    "contentText": {
+      "type": "array",
+      "source": "children",
+      "selector": ".quote"
+    },
+    "citeText": {
+      "type": "array",
+      "source": "children",
+      "selector": "cite"
+    },
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "testimonialStyle": {
+      "type": "string"
+    },
+    "showStars": {
+      "type": "boolean",
+      "default": false
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "citeColor": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "contentText": "A testimonial is often used to let people know what other people think of you or your product.",
+      "citeText": "ZintaThemes",
+      "align": "center",
+      "testimonialStyle": "hb-quote-style1",
+      "showStars": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/column",
+  "title": "Column",
+  "description": "A single column.",
+
+  "parent": [
+    "hayyabuild/row"
+  ],
+
+
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "",
+      "attribute": ""
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/templateparts",
+  "title": "HayyaBuild Template Parts",
+  "description": "When building headers or footers with HayyaBuild you can add it in template parts by using this block.",
+
+  "support": {
+    "reusable": false,
+    "html": false,
+    "__experimentalLayout": {
+      "allowEditing": false
+    }
+  },
+
+  "attributes": {
+    "type": {
+      "type": "string"
+    }
+  }
+}

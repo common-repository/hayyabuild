@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/accordionpanel",
+  "title": "Accordion Panel",
+  "description": "Accordion Panel.",
+  "parent": [ "hayyabuild/accordion" ],
+
+  "keywords": [ "accordion", "content" ],
+
+  "supports": {
+    "html": false
+  },
+
+  "attributes": {
+    "title" : {
+      "type": "text",
+      "source": "children",
+      "selector": ".hayyabuild-accordion__content__header__title"
+    },
+    "icon": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-accordion__content__header i",
+      "default": ""
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    },
+    "alwaysactive": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

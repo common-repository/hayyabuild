@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/pricingtableplan",
+  "title": "Pricing Plan",
+  "description": "Single table.",
+
+  "parent": [
+    "hayyabuild/pricingtable"
+  ],
+
+  "attributes": {
+    "ribbonText": {
+      "type": "array",
+      "source": "children",
+      "selector": ".hayyabuild-pricingtable__plan__header__ribbon span"
+    },
+    "headingText": {
+      "type": "array",
+      "source": "children",
+      "selector": ".hayyabuild-pricingtable__plan__header__heading"
+    },
+    "planIcon": {
+      "typr": "string",
+      "source": "attribute",
+      "selector": ".hayyabuild-pricingtable__plan__header__icon > i",
+      "attribute": "class"
+    },
+    "priceText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hayyabuild-pricingtable__plan__header__price"
+    },
+    "featuredPlan": {
+      "type": "boolean",
+      "default": false
+    },
+    "ribbonTextColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "ribbonBgColor": {
+      "type": "string",
+      "default": "#0097d4"
+    },
+    "id": {
+      "type": "string",
+      "default": ""
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

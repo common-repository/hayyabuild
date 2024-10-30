@@ -1,0 +1,97 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/openstreetmap",
+  "title": "Map",
+  "description": "Leaflet map is a mobile-friendly interactive maps. Create and add a Map to a website in seconds with this Map block generator.",
+
+  "support": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "show_content": {
+      "type": "boolean",
+      "default": false
+    },
+    "min_height": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-height",
+      "selector": ".wp-block-hayyabuild-openstreetmap",
+      "default": "400"
+    },
+    "style": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-style",
+      "selector": ".wp-block-hayyabuild-openstreetmap",
+      "default": "style1"
+    },
+    "customstyle": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-customstyle",
+      "selector": ".wp-block-hayyabuild-openstreetmap",
+      "default": ""
+    },
+    "attribution": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hayyabuild-map-attribution",
+      "default": ""
+    },
+    "latitude": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-lat",
+      "selector": ".wp-block-hayyabuild-openstreetmap",
+      "default": "00.000000"
+    },
+    "longitude": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-lng",
+      "selector": ".wp-block-hayyabuild-openstreetmap",
+      "default": "00.000000"
+    },
+    "zoom": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "data-zoom",
+      "selector": ".wp-block-hayyabuild-openstreetmap",
+      "default": "10"
+    },
+    "markerIcon": {
+      "type": "string",
+      "selector": "icon1"
+    },
+    "markers": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hayyabuild-map-markers-list"
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "animate": true,
+      "size": 2,
+      "style": {
+        "latitude": "31.924302",
+        "longitude": "12.254648",
+        "zoom": "5",
+        "min_height": "150"
+      }
+    }
+  }
+
+}

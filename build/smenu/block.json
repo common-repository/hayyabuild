@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/smenu",
+  "title": "Simple Menu",
+  "description": "With Simple Menu block you can add menus to any place.",
+
+  "supports": {
+    "html": false
+  },
+
+  "attributes": {
+    "menu": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "vertical": {
+      "type": "boolean",
+      "default": false
+    },
+    "editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "vertical": true
+    }
+  }
+}

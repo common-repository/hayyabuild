@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/card",
+  "title": "Info Card",
+  "description": "Information cards are personal digital identities that people can use online, and the key component of an identity metasystem.",
+
+  "keywords": [ "card", "info" ],
+
+  "attributes": {
+    "image": {
+      "type": "url",
+      "source": "attribute",
+      "attribute": "src",
+      "selector": ".hayyabuild-card__header__image"
+    },
+    "imgtitle": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "title",
+      "selector": ".hayyabuild-card__header__image",
+      "default": ""
+    },
+    "icon": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-card__header__icon > i"
+    },
+    "iconsize": {
+      "type": "number",
+      "default": 3
+    },
+    "shadow": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".hayyabuild-card--shadow"
+    },
+    "hovereffect": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text",
+      "source": "children",
+      "selector": ".hayyabuild-card__header__title"
+    },
+    "text": {
+      "type": "text",
+      "source": "children",
+      "selector": ".hayyabuild-card__body__content > div"
+    },
+    "btntitle": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "title",
+      "selector": ".hayyabuild-card__body__button"
+    },
+    "btnlink": {
+      "type": "url",
+      "source": "attribute",
+      "attribute": "href",
+      "selector": ".hayyabuild-card__body__button"
+    },
+    "waveeffect": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "class",
+      "selector": ".waves-effect"
+    },
+    "wavestyle": {
+      "type": "string",
+      "default": "light"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "icon": "fa fa-shopping-cart",
+      "shadow": true,
+      "title": "Card Title",
+      "text": "Information cards are personal digital identities that people can use online, and the key component of an identity metasystem.",
+      "btntitle": "Card Button",
+      "btnlink": "#"
+    }
+  }
+}

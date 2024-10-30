@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/godown",
+  "title": "Go Down Button",
+  "description": "Add go down link to header.",
+
+  "keywords": [
+    "link"
+  ],
+
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "fa fa-angle-double-down"
+    },
+    "size": {
+      "type": "number",
+      "default": 3
+    },
+    "animate": {
+      "type": "boolean",
+      "default": false
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "xx",
+      "attribute": "style"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "animate": true,
+      "size": 2,
+      "style": {
+        "padding": "30px 30px",
+        "background": "rgba(0,0,0,0.3)",
+        "borderRadius": "5px",
+        "color": "#FFFFFF"
+      }
+    }
+  }
+}

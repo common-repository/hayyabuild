@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/featureslistitem",
+  "title": "Features Item",
+
+  "parent": [
+    "hayyabuild/featureslist"
+  ],
+
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "fa fa-check-double"
+    }, 
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

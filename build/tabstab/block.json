@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/tabstab",
+  "title": "Tab",
+  "description": "Tab.",
+
+  "parent": [
+    "hayyabuild/tabs"
+  ],
+
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Tab Title"
+    },
+    "icon": {
+      "type": "string",
+      "default": ""
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

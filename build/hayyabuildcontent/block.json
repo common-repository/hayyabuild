@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/hayyabuildcontent",
+  "title": "HayyaBuild content",
+  "description": "Insert HayyaBuild content to posts/pages.",
+
+  "support": {
+    "html": false
+  },
+
+  "attributes": {
+    "contentID": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/menu",
+  "title": "Menu",
+  "description": "You can use this menu block in headers as the main menu with many options.",
+
+  "support": {
+    "html": false
+  },
+
+  "attributes": {
+    "menu": {
+      "type": "string",
+      "default": ""
+    },
+    "menuIcon": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "container": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "menuIcon": ""
+    }
+  }
+}

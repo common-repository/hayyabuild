@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/stickybox",
+  "title": "Sticky Box",
+  "description": "This content box will stick to the screen when you reach scroll position.",
+
+  "keywords": [ "spacer" ],
+
+  "supports": {
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "align": {
+      "type": "string"
+    },
+    "container": {
+      "type": "boolean",
+      "default": false
+    },
+    "onlyFixed": {
+      "type": "boolean",
+      "default": false
+    },
+    "afterHeaderEnd": {
+      "type": "boolean",
+      "default": false
+    },
+    "showOnScrollup": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "style"
+    }
+  }
+}

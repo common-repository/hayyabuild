@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/doublesided",
+  "title": "Double Sided Box",
+  "description": "It`s a box with tow faces the first one is visible and the second one is hidden, but when hover/tap over it the second one will be visible and the first one will be hidden.",
+
+  "keywords": [ "content",  "card", "info" ],
+
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "flip"
+    },
+    "perspective": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/button",
+  "title": "Button",
+  "description": "The button block defines a clickable button. Inside a button block you can put content, like text or icon.",
+
+  "keywords": [ "button" ],
+
+  "attributes": {
+    "text": {
+      "type": "array",
+      "source": "children",
+      "selector": "span"
+    },
+    "title": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "title"
+    },
+    "link": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "href"
+    },
+    "align": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a i",
+      "attribute": "class"
+    },
+    "newTab": {
+      "type": "boolean",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "target"
+    },
+    "waveEffect": {
+      "type": "boolean",
+      "default": true
+    },
+    "shadowffect": {
+      "type": "boolean",
+      "default": true
+    },
+    "effectType": {
+      "type": "string",
+      "default": "light"
+    },
+    "size": {
+      "type": "number",
+      "default": 3
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "style"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "text": "Button",
+      "icon": "fa fa-hand-pointer",
+      "size": 5,
+      "style": {
+        "background": "#389BFF"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/pagecontent",
+  "title": "Page content",
+  "description": "When building any page with HayyaBuild you can add the original content of the page to any place that you want.",
+
+  "support": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/breadcrumb",
+  "title": "Breadcrumb Menu",
+  "description": "A breadcrumb or breadcrumb trail is a graphical control element frequently used as a navigational aid in user interfaces and on web pages. It allows users to keep track and maintain awareness of their locations within websites.",
+
+  "keywords": [ "menu", "navigation" ],
+
+
+  "attributes": {
+    "home_title": {
+      "type": "string",
+      "default": "Home"
+    },
+    "home_icon": {
+      "type": "string",
+      "default": "fa fa-home"
+    },
+    "separator": {
+      "type": "string",
+      "default": "fa fa-angle-double-right"
+    },
+    "editor": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "home_title": "",
+      "home_icon": "fa fa-home"
+    }
+  }
+}

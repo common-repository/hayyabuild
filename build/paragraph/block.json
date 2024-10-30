@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/paragraph",
+  "title": "Advanced Paragraph",
+  "description": "You can use this block to separate the content vertically.",
+
+  "support": {
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "content": {
+      "type": "array",
+      "source": "children",
+      "selector": "p"
+    },
+    "align": {
+      "type": "string"
+    },
+    "dropCap": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "content": "HayyaBuild is working with the new WordPress editor aka Gutenberg that makes it very lightweight, extendable and efficient. So it’s possible to use HayyaBuild blocks with pages, posts or any posts type that uses Gutenberg editor."
+    }
+  }
+}

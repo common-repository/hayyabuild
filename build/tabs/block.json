@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/tabs",
+  "title": "Tabs",
+  "description": "Tabs are components which separate content placed in the same wrapper but in the separate pane.",
+
+  "keywords": [ "tabs" ],
+
+  "supports": {
+    "align": [ "wide", "full" ]
+  },
+
+  "attributes": {
+    "vertical": {
+      "type": "boolean",
+      "default": false
+    },
+    "align": {
+      "type": "string"
+    },
+    "hideplus": {
+      "type": "boolean",
+      "default": false
+    },
+    "effect": {
+      "type": "string"
+    },
+    "list": {
+      "type": "object"
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "hayyabuild/tabstab",
+        "attributes": {
+          "icon": "fa fa-home",
+          "title": "Tab Title 1"
+        }
+      },
+      {
+        "name": "hayyabuild/tabstab",
+        "attributes": {
+          "icon": "fa fa-tachometer-alt",
+          "title": "Tab Title 2"
+        }
+      },
+      {
+        "name": "hayyabuild/tabstab",
+        "attributes": {
+          "icon": "fa fa-shopping-cart",
+          "title": "Tab Title 3"
+        }
+      }
+    ]
+  }
+}

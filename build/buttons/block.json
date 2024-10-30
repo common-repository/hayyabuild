@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/buttons",
+  "title": "Buttons Group",
+  "description": "The buttons block is a row of clickable buttons.",
+
+  "keywords": [ "button" ],
+
+  "attributes": {
+    "buttonsSpace": {
+      "type": "number",
+      "default": 0
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "hayyabuild/button",
+        "attributes": {
+          "text": "Button 1",
+          "icon": "fa fa-hand-pointer",
+          "size": 2,
+          "style": {
+            "background": "#FF6B6B"
+          }
+        }
+      },
+      {
+        "name": "hayyabuild/button",
+        "attributes": {
+          "text": "Button 2",
+          "icon": "fa fa-hand-pointer",
+          "size": 2,
+          "style": {
+            "background": "#FF6BCD"
+          }
+        }
+      },
+      {
+        "name": "hayyabuild/button",
+        "attributes": {
+          "text": "Button 3",
+          "icon": "fa fa-hand-pointer",
+          "size": 2,
+          "style": {
+            "background": "#A2E23A"
+          }
+        }
+      }
+    ]
+  }
+
+}

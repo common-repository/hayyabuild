@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "editorStyle": "hayyabuild",
+  "category": "hayyabuild",
+  "textdomain": "hayyabuild",
+
+  "name": "hayyabuild/progressbar",
+  "title": "Progress Bar",
+  "description": "Easily create beautiful progress bar.",
+
+  "keywords": [ "progress bar" ],
+
+  "supports": {
+    "html": false
+  },
+
+  "attributes": {
+    "title": {
+      "type": "array",
+      "source": "children",
+      "selector": "span.hayyabuild-progressbar__title"
+    },
+    "showProgressText": {
+      "type": "boolean",
+      "default": true
+    },
+    "percent": {
+      "type": "boolean",
+      "default": true
+    },
+    "animate": {
+      "type": "boolean",
+      "default": false
+    },
+    "value": {
+      "type": "number",
+      "default": 50
+    },
+    "max": {
+      "type": "number",
+      "default": 100
+    },
+    "id": {
+      "type": "string"
+    },
+    "classesList": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "source": "attribute",
+      "selector": "xx",
+      "attribute": "xx"
+    }
+  },
+
+  "example": {
+    "attributes": {
+      "title": "Progress bar",
+      "percent": false,
+      "showProgressText": false,
+      "max": 88,
+      "value": 60,
+      "style": {
+        "backgroundImage": "linear-gradient(257deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%)"
+      }
+    }
+  }
+}
